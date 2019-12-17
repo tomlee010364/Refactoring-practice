@@ -11,11 +11,11 @@ import chess.Cell;
 public class Rook extends Piece{
 	
 	//Constructor
-	public Rook(String i,String p,int c)
+	public Rook(String id,String path,int color)
 	{
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//Move function defined

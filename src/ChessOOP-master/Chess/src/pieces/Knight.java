@@ -12,11 +12,11 @@ import chess.Cell;
 public class Knight extends Piece{
 	
 	//Constructor
-	public Knight(String i,String p,int c)
+	public Knight(String id,String path,int color)
 	{
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//Move Function overridden

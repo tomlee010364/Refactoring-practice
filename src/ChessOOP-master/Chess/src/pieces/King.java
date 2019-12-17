@@ -9,13 +9,13 @@ public class King extends Piece{
 	private int x,y; //Extra variables for King class to keep a track of king's position
 	
 	//King Constructor
-	public King(String i,String p,int c,int x,int y)
+	public King(String id,String path,int color,int x,int y)
 	{
 		setx(x);
 		sety(y);
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//general value access functions
@@ -43,8 +43,8 @@ public class King extends Piece{
 		int posx[]={x,x,x+1,x+1,x+1,x-1,x-1,x-1};
 		int posy[]={y-1,y+1,y-1,y,y+1,y-1,y,y+1};
 		for(int i=0;i<8;i++)
-			if((posx[i]>=0&&posx[i]<8&&posy[i]>=0&&posy[i]<8))
-				if((state[posx[i]][posy[i]].getpiece()==null||state[posx[i]][posy[i]].getpiece().getcolor()!=this.getcolor()))
+			if((posx[i]>=0&&posx[i]<8&&posy[i]>=0&&posy[i]<8)) //consider border
+				if((state[posx[i]][posy[i]].getpiece()==null||state[posx[i]][posy[i]].getpiece().getcolor()!=this.getcolor())) // Null or eat
 					possiblemoves.add(state[posx[i]][posy[i]]);
 		return possiblemoves;
 	}

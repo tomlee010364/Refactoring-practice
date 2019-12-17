@@ -11,11 +11,11 @@ import chess.Cell;
 public class Pawn extends Piece{
 	
 	//COnstructors
-	public Pawn(String i,String p,int c)
+	public Pawn(String id,String path,int color)
 	{
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//Move Function Overridden

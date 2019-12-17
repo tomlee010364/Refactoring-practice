@@ -14,11 +14,11 @@ import chess.Cell;
 public class Bishop extends Piece{
 	
 	//Constructor
-	public Bishop(String i,String p,int c)
+	public Bishop(String id,String path,int color)
 	{
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//move function defined. It returns a list of all the possible destinations of a Bishop

@@ -11,11 +11,11 @@ import chess.Cell;
 public class Queen extends Piece{
 	
 	//Constructors
-	public Queen(String i,String p,int c)
+	public Queen(String id,String path,int color)
 	{
-		setId(i);
-		setPath(p);
-		setColor(c);
+		setId(id);
+		setPath(path);
+		setColor(color);
 	}
 	
 	//Move Function Defined
