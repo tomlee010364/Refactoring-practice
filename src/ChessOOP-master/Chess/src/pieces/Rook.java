@@ -22,7 +22,7 @@ public class Rook extends Piece{
 	public ArrayList<Cell> move(Cell state[][],int x,int y)
 	{
 		//Rook can move only horizontally or vertically
-		VerticalHorizontal verticalhorizontal = new VerticalHorizontal(this, state, x, y);
+		Move verticalhorizontal = new VerticalHorizontal(this, state, x, y);
 		possiblemoves = verticalhorizontal.move();
 		return possiblemoves;
 	}

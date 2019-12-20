@@ -33,7 +33,7 @@ public class Pawn extends Piece{
 			if(state[x-1][y].getpiece()==null)
 			{
 				possiblemoves.add(state[x-1][y]);
-				if(x==6)
+				if(x==6) //first step
 				{
 					if(state[4][y].getpiece()==null)
 						possiblemoves.add(state[4][y]);
@@ -46,7 +46,7 @@ public class Pawn extends Piece{
 		}
 		else
 		{
-			if(x==8)
+			if(x==8) //x==7?
 				return possiblemoves;
 			if(state[x+1][y].getpiece()==null)
 			{

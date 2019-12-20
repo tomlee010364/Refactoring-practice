@@ -27,7 +27,7 @@ public class Bishop extends Piece{
 	{
 		//Bishop can Move diagonally in all 4 direction (NW,NE,SW,SE)
 		//This function defines that logic
-		Diagonal diagonal = new Diagonal(this, state, x, y);
+		Move diagonal = new Diagonal(this, state, x, y);
 		possiblemoves = diagonal.move();
 		return possiblemoves;
 	}

@@ -25,9 +25,9 @@ public class Queen extends Piece{
 		//Queen can move any number of steps in all 8 direction
 		//The possible moves of queen is a combination of Rook and Bishop
 		
-		VerticalHorizontal verticalhorizontal = new VerticalHorizontal(this, state, x, y);
+		Move verticalhorizontal = new VerticalHorizontal(this, state, x, y);
 		possiblemoves = verticalhorizontal.move();
-		Diagonal diagonal = new Diagonal(this, state, x, y);
+		Move diagonal = new Diagonal(this, state, x, y);
 		possiblemoves.addAll(diagonal.move());
 
 		return possiblemoves;
