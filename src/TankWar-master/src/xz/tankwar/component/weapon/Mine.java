@@ -8,7 +8,6 @@ import xz.tankwar.module.MainWindow;
 import static xz.tankwar.component.tank.ComTank.ComTankType.*;
 
 public class Mine extends Weapon {
-    private static final long serialVersionUID = 1L;
     static final int R = 15, POWER = 3000;
     static final int EXPLOSION_R[] = { 15, 20, 27, 22 };
     int lastTime = 53;

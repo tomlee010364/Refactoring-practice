@@ -8,7 +8,6 @@ import xz.tankwar.module.MainWindow;
 import static xz.tankwar.component.Direction.*;
 
 public class Missile extends Weapon {
-    private static final long serialVersionUID = 1L;
     static final int R = 4;
     static final int EXPLOSION_R[] = { 4, 6 };
     protected int STEP = 12;

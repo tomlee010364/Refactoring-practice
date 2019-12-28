@@ -8,7 +8,6 @@ import xz.tankwar.module.MainWindow;
 
 public class Explosion extends Weapon {
     
-    private static final long serialVersionUID = 1L;
     int[] expRadius = null;
     int curF = 0;
     int power = 0;

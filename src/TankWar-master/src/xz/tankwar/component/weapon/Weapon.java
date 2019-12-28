@@ -9,10 +9,7 @@ import xz.tankwar.module.MainWindow;
 
 public abstract class Weapon extends GameComponent implements Automatic {
 
-    private static final long serialVersionUID = 1L;
-
-    public abstract int getAttackRadius();
-
+    public abstract int getAttackRadius(); 
     public abstract boolean effect(Tank t);
     
     protected Weapon () {
